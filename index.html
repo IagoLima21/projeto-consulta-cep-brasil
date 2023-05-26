@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultar CEP</title>
+  <link rel="stylesheet" href="script and style/style.css">
+  <script src="script and style/script.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="margin-top: 0;">Consultar CEP</h1>
+    <div id="formulario">
+      <label>Insira o CEP:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" oninput="formatarCEP(this)" />
+      </label>
+      <button class="btn-buscar" type="button" onclick="pesquisacep()">Buscar</button>
+      <div id="cep-error" style="display: none; color: rgb(243, 239, 239);">CEP inválido ou operação não permitida.</div>
+    </div>
+
+    <div id="resultado">
+      <div class="campo-resultado">
+        <label>CEP:</label>
+        <input name="cep" type="text" id="cep-resultado" readonly />
+      </div>
+      <div class="campo-resultado">
+        <label>Rua:</label>
+        <input name="rua" type="text" id="rua" readonly />
+      </div>
+      <div class="campo-resultado">
+        <label>Bairro:</label>
+        <input name="bairro" type="text" id="bairro" readonly />
+      </div>
+      <div class="campo-resultado">
+        <label>Cidade:</label>
+        <input name="cidade" type="text" id="cidade" readonly />
+      </div>
+      <div class="campo-resultado">
+        <label>Estado:</label>
+        <input name="uf" type="text" id="uf" readonly />
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

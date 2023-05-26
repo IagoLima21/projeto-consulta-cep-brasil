@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+#resultado {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.campo-resultado {
+  margin-bottom: 10px;
+}
+.campo-resultado label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+.campo-resultado input {
+  width: 300px;
+}
+.btn-buscar {
+  background-color: blue;
+  color: white;
+  width: 300px; /* Mesma largura que as caixas de informações */
+}
+.btn-buscar:hover {
+  background-color: rgb(0, 0, 0); /* Azul mais claro ao posicionar o cursor */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background-image: url('https://img.freepik.com/fotos-premium/globo-terrestre-de-tecnologias-de-comunicacao-global-com-ilustracao-3d-de-linhas-de-neon_76964-5153.jpg?w=2000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #fff 0%, #fffbfb 100%);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  color: #000;
+}
+
+input[type="text"]:focus {
+  border-color: #060706;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #050505;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #080808;
+}
+
+button:active {
+  animation: button-click 0.2s ease;
+}
+
+@keyframes button-click {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+.section-cep {
+  position: relative;
+  padding: 20px;
+  background-color: #f2f2f2;
+  z-index: 0;
+}
